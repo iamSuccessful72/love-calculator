@@ -26,7 +26,7 @@ function MatchResult() {
             </span>
           </p>
           <p className="flex justify-between text-gun-powder-500">
-            <span className="font-bold">Percentage</span>
+            <span className="font-bold">Percentage:</span>
             <span>{`${responseObject.percentage}%`}</span>
           </p>
           <p className="flex justify-between text-gun-powder-500">
