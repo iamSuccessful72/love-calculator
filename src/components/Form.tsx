@@ -63,13 +63,9 @@ function Form() {
     </form>
   );
 
-  function handleBlur(input: number): void {
+  function handleBlur(inputNumber: number): void {
     const hints = document.querySelectorAll<HTMLParagraphElement>(".hints");
-    if (input === 0) {
-      hints[0].textContent = "";
-    } else {
-      hints[1].textContent = "";
-    }
+      hints[inputNumber].textContent = "";
   }
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>): void {
@@ -84,13 +80,9 @@ function Form() {
     });
   }
 
-  function handleFocus(input: number): void {
+  function handleFocus(inputNumber: number): void {
     const hints = document.querySelectorAll<HTMLParagraphElement>(".hints");
-    if (input === 0) {
-      hints[0].textContent = "Name should be at least 3 characters long!!";
-    } else {
-      hints[1].textContent = "Name should be at least 3 characters long!!";
-    }
+      hints[inputNumber].textContent = "Name should be at least 3 characters long!!";
   }
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>): void {
